@@ -1,1 +1,25 @@
 
+<script>
+function add(n1,n2)
+{return (eval(n1)+eval(n2));}
+
+function sub(n1,n2)
+{return (eval(n1)-eval(n2));}
+
+function mul(n1,n2)
+{return (eval(n1)*eval(n2));}
+
+function div(n1,n2)
+{return (eval(n1)/eval(n2));}
+</script>
+
+<script>
+n1 = prompt("#1");
+op = prompt("Operation");
+n2 = prompt("#2");
+
+if(op=="+")alert(add(n1,n2));
+if(op=="-")alert(sub(n1,n2));
+if(op=="*")alert(mul(n1,n2));
+if(op=="/")alert(div(n1,n2));
+</script>
