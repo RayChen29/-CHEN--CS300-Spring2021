@@ -1,0 +1,39 @@
+
+
+<h1>Chen, Ray's Calculator</h1>
+<head>
+<script>
+function oper(n1,op,n2){
+
+               if(op.value=="+")
+               {document.forms[0].elements[3].value=(eval(n1.value)+eval(n2.value));}
+               if(op.value=="-")
+               {document.forms[0].elements[3].value=(eval(n1.value)-eval(n2.value));}
+               if(op.value=="*")
+               {document.forms[0].elements[3].value=(eval(n1.value)*eval(n2.value));}
+               if(op.value=="/")
+               {document.forms[0].elements[3].value=(eval(n1.value)/eval(n2.value));}
+               return;
+
+}
+
+</script>
+</head>
+
+<body>
+<form name=ex onSubmit="oper(n1,op,n2);return false">
+	<input type=text name="n1">
+	<select name="op">
+	<option>+
+	<option>-
+	<option>*
+	<option>/
+	</select>
+	<input type=text name="n2">
+=
+	<input type=text name="n3">
+
+<input type="submit" value="OK">
+
+</form>
+</body>
