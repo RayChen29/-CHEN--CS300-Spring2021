@@ -1,0 +1,345 @@
+{
+  "id": "330f58d6-c843-4f60-92a1-f713d1f50633",
+  "version": "2.0",
+  "name": "Chen, Raymond, EX4",
+  "url": "http://web.cecs.pdx.edu/~cgi_web/F/game.html",
+  "tests": [{
+    "id": "2242a470-19a1-42d3-aee3-5eca00b96b9f",
+    "name": "TC1",
+    "commands": [{
+      "id": "cdec6ef8-b04a-4e8c-be46-27a03c3a3333",
+      "comment": "",
+      "command": "open",
+      "target": "http://web.cecs.pdx.edu/~cgi_web/F/game.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5253fbc-e271-4b7c-9a4e-92a7edf05b71",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1399x947",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "848a9e95-971e-40d6-ae44-fc3e0a55dee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e28a50-6604-43bd-a418-057c98d11e1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ce5f0f5-9f5d-46ee-8e28-e5b204989f9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0,0"
+    }, {
+      "id": "3189f666-70a6-47ff-95d2-e83c9a54dd43",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8652975a-43f3-4e77-a62a-1706c9184d92",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) button",
+      "targets": [
+        ["css=tr:nth-child(3) button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SOUTH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e313d7f-dd4c-4c6f-964d-0357853c71c6",
+      "comment": "If step off game world, placed back at 12,12",
+      "command": "assertValue",
+      "target": "id=location",
+      "targets": [],
+      "value": "12,12"
+    }]
+  }, {
+    "id": "5501af8b-357e-46dc-b8d8-072c33d3e227",
+    "name": "TC2",
+    "commands": [{
+      "id": "e4db637f-5807-4a4a-862c-37f245973f08",
+      "comment": "",
+      "command": "open",
+      "target": "http://web.cecs.pdx.edu/~cgi_web/F/game.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47f50243-221a-44a0-9850-f0791eb08078",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1399x947",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c21664e0-bb34-41cc-9b48-40e5c434edac",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "385b0213-f092-44a4-ac69-c43449c749ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "722ec981-26a7-407a-9443-f90637efdd39",
+      "comment": "",
+      "command": "type",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0,0"
+    }, {
+      "id": "232dd0a2-ccfd-4fac-b2a3-512e9d6f4560",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "acbd0dcd-bd3d-4fac-a737-763472175864",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) > button",
+      "targets": [
+        ["css=td:nth-child(1) > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'WEST')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba64209d-faf0-40d6-9c23-9aae357725ae",
+      "comment": "If step off game world, placed back at 12,12",
+      "command": "assertValue",
+      "target": "id=location",
+      "targets": [],
+      "value": "12,12"
+    }]
+  }, {
+    "id": "a60f0ffd-a828-4c10-9672-428cc92f06f8",
+    "name": "TC3",
+    "commands": [{
+      "id": "057293e2-2402-4124-b8e7-d611a58c86d6",
+      "comment": "",
+      "command": "open",
+      "target": "http://web.cecs.pdx.edu/~cgi_web/F/game.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1798bae5-d2cb-46c5-87af-b56a51ca2acf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1399x947",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea628952-8cc7-412c-ab51-265668613ced",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5823bf87-8eee-4d58-9384-905d36a29688",
+      "comment": "",
+      "command": "type",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1,4"
+    }, {
+      "id": "553f9b70-4551-4243-b813-d43e3fc33e3e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cf00df4b-b7bd-4e3c-a095-6ed1f80b3333",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) button",
+      "targets": [
+        ["css=tr:nth-child(1) button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'NORTH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31a52730-bd74-4445-b1c1-6b4c67776a7a",
+      "comment": "Stepping into 2,4 subtracts 2 energy not 1",
+      "command": "assertValue",
+      "target": "id=energy",
+      "targets": [],
+      "value": "98"
+    }]
+  }, {
+    "id": "27565540-aa5b-489d-9f4f-87aa49b177df",
+    "name": "TC4",
+    "commands": [{
+      "id": "1964b9ae-f328-4b16-90c2-1cf24ed73d89",
+      "comment": "",
+      "command": "open",
+      "target": "http://web.cecs.pdx.edu/~cgi_web/F/game.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd8e914c-57d1-42d0-af99-87d150e17553",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "769x947",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d6e54eb-6a98-47ce-9823-75ade491af50",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de67b06b-59a4-45fe-8d5d-beafe0d30c25",
+      "comment": "",
+      "command": "type",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5,5"
+    }, {
+      "id": "df66997a-3fdd-4af3-9e50-cba2be368eec",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0f818107-7a8d-4ade-9f54-663c8d729b16",
+      "comment": "",
+      "command": "type",
+      "target": "id=energy",
+      "targets": [
+        ["id=energy", "id"],
+        ["css=#energy", "css:finder"],
+        ["xpath=//input[@id='energy']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "3e2cc42b-177e-46e8-a2f7-fe9e35e4c0f9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=energy",
+      "targets": [
+        ["id=energy", "id"],
+        ["css=#energy", "css:finder"],
+        ["xpath=//input[@id='energy']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4a04a73f-543f-4871-a7a6-fc7e8620491e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > button",
+      "targets": [
+        ["css=td:nth-child(3) > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'EAST')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4c579d-5781-445e-8ab4-24d03a96ea55",
+      "comment": "When moving with 1 energy, move back to 12,12",
+      "command": "assertValue",
+      "target": "id=location",
+      "targets": [],
+      "value": "12,12"
+    }]
+  }],
+  "suites": [{
+    "id": "9af036b5-85d4-4f48-9abc-a0fccfb75d16",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://web.cecs.pdx.edu/", "http://web.cecs.pdx.edu/~cgi_web/F/game.html"],
+  "plugins": []
+}
